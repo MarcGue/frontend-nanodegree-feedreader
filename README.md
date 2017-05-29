@@ -8,5 +8,5 @@ Download or clone the repository:
 
     https://github.com/MarcGue/frontend-nanodegree-feedreader
 
-- To run the application go to your project folder and open the index.html file
+- To run the application go to your project folder and open the index.html file with a browser of your choice
 
