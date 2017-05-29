@@ -10,6 +10,3 @@ Download or clone the repository:
 
 - To run the application go to your project folder and open the index.html file
 
-## See the demo
-
-    https://marcgue.github.io/frontend-nanodegree-feedreader/
