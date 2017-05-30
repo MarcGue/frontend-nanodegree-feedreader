@@ -85,14 +85,11 @@ $(function () {
          * a single .entry element within the .feed container.
          */
         beforeEach(function (done) {
-            loadFeed(0, function () {
-                done();
-            });
+            loadFeed(0, done);
         });
 
-        it('has at least a single entry element within the feed container', function (done) {
+        it('has at least a single entry element within the feed container', function () {
             expect($('.feed .entry').length).toBeGreaterThan(0);
-            done();
         });
     });
 
@@ -106,11 +103,12 @@ $(function () {
         beforeEach(function (done) {
             loadFeed(0, function () {
                 feedSelection = $('.feed').html();
+                
+                loadFeed(1, function () {
+                    done();
+                });
             });
 
-            loadFeed(1, function () {
-                done();
-            });
         });
 
         it('will change content', function (done) {
